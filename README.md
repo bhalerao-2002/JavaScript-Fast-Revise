@@ -111,3 +111,92 @@ const result = arr.reduce((accumulator, currentElem, idx, array) => {
       const sum = arr.reduce((accumulator, currentElem) => accumulator + currentElem, 0);
       console.log(sum); // Output: 15
 ```
+
+## String: 
+- Strings can’t be changed (Immutable) in JavaScript. It is impossible to change a character
+- Functions
+```
+string str = "rushikesh"
+
+1. Character Finding in string
+char ch = str.charAt(idx); //This will return the character at the given index
+OR
+char ch = str[idx];
+OR
+char ch = str.charCodeAt(idx); // will return the index characters ASCII value
+
+// 2. Searching of substr in string
+str.include(Key); //Return true if key is present in str else false
+str.includes(substr, pos)
+
+str.indexOf(key); //Return the index of the first occurence of the key in str
+str.indexOf(substr, position); // str.indexOf('a', 3) will return index of 3rd occurence of the key a.
+
+str.lastIndexOf(key); //Return the index of the last occurence of the key in str
+str.lastIndexOf(substr, position);
+
+str.search(key); //Return the index of key in str, else -1
+
+str.startsWith("key"); // Will return true if str starts with key else false
+str.endsWith("key");
+
+// 3. Changing Case of str
+str.toUpperCase(); //UPPERCASE 
+str.toLowerCase(); //LOWERCASE
+
+// 4. Getting a substring
+const subStr = str.substring(fromIdx, toIdx); // Return the sub string, it only accepts positive idxs
+
+const subStr = str.slice(fromIdx, toIdx); // Return the sub string, it accepts positive + negative idxs
+
+
+
+
+// 5. Comparing the strings
+str.localCompare(str2); //Return 0 if same else -1
+
+// 6. Replacing the substr in string
+str.replace(toReplace, withToReplace); //It replaces the toReplace word with withToReplace.(only one)
+
+str.replaceAll(key, withToReplace); //This will replace all places
+
+// 7. Seperating the String
+
+const arr = str.split('.'); //Return the array with . separated values of str.
+
+// 8. Joining the sub strings
+
+const str = arr.join(' '); //Return the string with joining the each element of arr with space.
+
+// 9. Trimming the string
+
+str.trim(); //Will trim all white spaces from front and back of str.
+str.trimStart();
+str.trimEnd();
+
+// 10. Converting to String
+
+const num = 123 // Integer
+num.toSting(); //num becames string '123'
+
+const obj = {
+  age: '11',
+  name: "RUshi"
+}
+JSON.Stringify(obj); //Convert object to string
+
+// 11. Concatinition
+
+str.concate(str2);
+OR
+const ans = str + str1;
+OR
+const ans = `${str} ${str1} huehue`;
+
+
+
+
+
+
+
+```
